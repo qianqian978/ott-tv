@@ -1,0 +1,255 @@
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    overflow:hidden;
+    background: url('http://milier-resource.oss-cn-hangzhou.aliyuncs.com/h5/details/prod/images/ott%EF%BC%8D%E9%A6%96%E9%A1%B5%E8%83%8C%E6%99%AF.png.webp') #060948;
+    font-family:HiraginoSansGB-W3;
+}
+ul{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+li{
+    list-style:none;
+}
+a{
+    outline: none; 
+    text-decoration: none;
+}
+
+#ott-index{
+    width:45.25rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position:absolute;
+    top:1.5rem;
+    left:.75rem;
+    bottom:1rem;
+    overflow:hidden;
+}
+/*
+* 菜单栏
+*/
+.ott-indexMenuContainer{
+    width:6.75rem;
+    height:16.625rem; 
+    position: relative;
+}
+.ott-menuImage{
+    display: block;
+    width:100%;
+    height: 2.75rem;
+    background: url('http://www.miguxue.com/p/content/repository/ues/image/s140/20170223222051460.png') no-repeat;
+    background-size:100%;
+}
+.ott-menuBackground{
+    width: 3.75rem;
+    border-bottom: 14.075rem solid rgba(170, 170, 170, 0.1);
+    border-left: .625rem solid transparent;
+    border-right: .625rem solid transparent;
+    border-radius: 5px;
+    margin:0 auto;
+}
+.ott-menuContainer{
+    width: 3.75rem;
+    text-align: center;
+    position: absolute;
+    top: 4rem;
+    left: 1.5rem;
+}
+.ott-menuHref{
+    position:relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 1.95rem;
+    color: #fff;
+    font-size: .9rem;
+    display: block;
+    text-align: center;
+    line-height: 1.95rem;
+    width: 3.75rem;
+    margin: 0 auto;
+}
+.ott-menuHref:last-child{
+    border:none;
+}
+.ott-menuHref.fe-focus span{
+    font-weight:bold;
+    color:#55c9c4;
+    padding: 0.1rem 0.5rem;
+    border: 0.1rem solid #55c9c4;
+    border-radius: 0.2rem;
+}
+
+.ott-indexContentContainer{
+    width:38rem;
+    height:100%;
+    overflow:hidden;
+}
+.ott-extendingUl:after{
+    display: table;
+    content:'';
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.ott-extendingUl li{
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.ott-push li{
+    width: 9.35rem;
+    height: 6.8rem;
+}
+.ott-extendingUl li .ott-extendingListA{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: .2rem;
+}
+.ott-extendingUl li .ott-extendingListA .ott-bookListImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5.6rem;
+    overflow: hidden;
+    padding: .3rem;
+    box-sizing: border-box;
+}
+.ott-extendingUl li .ott-extendingListA .ott-bookListImage img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .15rem;
+}
+.ott-extendingUl li .ott-extendingListA .ott-bookListTitle{
+    position: absolute;
+    top: 5.45rem;
+    left: .3rem;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    width: 93%;
+    height: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+}
+.scroll-title{
+    white-space: nowrap;
+    display: inline-block;
+}
+.ott-extendingUl li.fe-focus .ott-extendingListA .ott-bookListImage{
+    padding: 0;
+    border: .15rem solid #00fff4;
+    border-radius: .3rem;
+}
+.ott-extendingUl li.fe-focus .ott-extendingListA .ott-bookListImage .book-icon{
+    margin: 0;
+}
+.ott-push li.ott-extendingLi-0{width:18.45rem;}
+.ott-push li.ott-extendingLi-4,
+.ott-push li.ott-extendingLi-5,
+.ott-push li.ott-extendingLi-6{
+    height: 5.75rem; 
+    width: 12.1rem;
+}
+.ott-push li.ott-extendingLi-7,
+.ott-push li.ott-extendingLi-8{
+    width:5.75rem;
+    height:5.75rem;
+    padding:.22rem;
+}
+
+.ott-bookListContainer > .ott-bookListTitle{
+    position:relative;
+    width:100%;
+    height:3.4rem;
+    background:url('http://www.miguxue.com/p/content/repository/ues/image/s140/20170225144307079.png') .3rem center no-repeat;
+    background-size:auto 1.1rem;
+    
+}
+.ott-bookListContainer > .ott-bookListTitle a{
+    display: inline-block;
+    position:absolute;
+    top:.75rem;
+    left:0;
+    bottom:.75rem;
+    padding:.35rem;
+    padding-left:2.1rem;
+    line-height:1rem;
+    box-sizing:border-box;
+    font-size:1rem;
+    color:#55c9c4;
+    border: .15rem solid transparent;
+    border-radius:.3rem;
+}
+
+.ott-bookListContainer > .ott-bookListTitle.fe-focus a{
+    border: .15rem solid #00fff4
+}
+
+.ott-album li{
+    height: 9rem;
+    width: 9rem;
+    padding:.15rem;
+}
+
+.ott-cats li{
+    width: 9.35rem;
+    height: 6.8rem;
+}
+
+.book-icon{
+    background: url('http://www.miguxue.com/p/content/repository/ues/image/s140/20170505183302244.png') no-repeat;
+    background-size: cover;
+    height: 2.04rem;
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    margin: .3rem;
+}
+
+.ott-cats li.ott-extendingLi-0{width:18.45rem;padding:.1rem}
+.ott-cats li.ott-extendingLi-1,
+.ott-cats li.ott-extendingLi-2{width:9rem;padding:.1rem}
+.ott-cats li.ott-extendingLi-3,
+.ott-cats li.ott-extendingLi-4,
+.ott-cats li.ott-extendingLi-5,
+.ott-cats li.ott-extendingLi-6{width:9rem;height:5rem;padding:.1rem}
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 1270px){
+    html {
+        font-size: 26.67px !important;
+    }
+}
+@media only screen and (min-width: 1910px){
+    html {
+        font-size: 40px !important;
+    }
+}
